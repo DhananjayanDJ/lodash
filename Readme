@@ -1,0 +1,68 @@
+Chunk
+
+const _ = require("lodash");
+let arr = [1, 2, 3, 4, 5, 6];
+ 
+
+console.log(_.chunk(arr, 1))
+
+Reduce
+
+const _ = require("lodash");
+var users = [ 1, 2, 3, 4 ];
+   
+let gfg = _.reduce(users, function(sum, n) {
+  return sum + n;
+}, 0);
+console.log(gfg);
+
+Filter
+
+const _ = require("lodash"); 
+      
+
+var users = [
+  { 'user': 'luv',
+    'salary': 36000,
+    'active': true },
+  { 'user': 'kush', 
+    'salary': 40000,
+    'active': false }
+];
+  
+
+let filtered_array = _.filter(
+    users, function(o) {
+       return !o.active;
+    }
+);
+console.log(filtered_array);
+
+
+Find
+
+const _ = require('lodash');
+ 
+let x = [2, 5, 7, 10, 13, 15];
+ 
+let result = _.find(x, function(n) {
+    if (n * n > 100) {
+        return true;
+    }
+});
+ 
+console.log(result);
+
+
+Sum
+
+const _ = require("lodash");  
+    
+
+let gfg = _.sum([5, 10, 15, 20, 25]); 
+        
+
+console.log(gfg);
+
+
+
